@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
 
     var playerLayer:AVPlayerLayer!
+    var timer:Timer = Timer()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,10 +26,29 @@ class ViewController: UIViewController {
         view.layer.insertSublayer(playerLayer, at: 0)
         playerLayer.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         playerLayer.videoGravity = AVLayerVideoGravityResize
+        
         playerLayer.player?.play()
+        loopVideo()
+    }
+    
+    func loopVideo() {
+        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.playerLayer.player?.currentItem, queue: nil) { (_) in
+            DispatchQueue.main.async {
+                self.playerLayer.player?.seek(to: kCMTimeZero)
+                self.playerLayer.player?.play()
+            }
+        }
+    }
+   
+    override func viewDidAppear(_ animated: Bool) {
         
     }
 
+    @IBAction func signUpPressed(_ sender: Any) {
+        let registerVC:RegisterVC = storyboard?.instantiateViewController(withIdentifier: "register") as! RegisterVC
+        self.navigationController?.pushViewController(registerVC, animated: true)
+        
+    }
 
 }
 

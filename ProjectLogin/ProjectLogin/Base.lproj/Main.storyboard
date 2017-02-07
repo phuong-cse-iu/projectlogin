@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NJ0-D1-H6a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,6 +52,9 @@
                                                 <state key="normal" title="Signup">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Frz-bl-x5e"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -70,10 +73,103 @@
                             <constraint firstItem="Mx5-kf-ARh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0h-hf-yGQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="AiG-jD-7DM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90.400000000000006" y="-47.226386806596707"/>
+            <point key="canvasLocation" x="340" y="-111.0944527736132"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="CTk-rv-Jnx">
+            <objects>
+                <viewController storyboardIdentifier="register" id="ttf-ue-eh1" customClass="RegisterVC" customModule="ProjectLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ms-1i-5hL"/>
+                        <viewControllerLayoutGuide type="bottom" id="s8l-dm-iJe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F7t-qK-dmw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the-movies-free-download-6311" translatesAutoresizingMaskIntoConstraints="NO" id="ZaD-6h-ogt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lSz-Lm-CgT">
+                                <rect key="frame" x="10" y="10" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vwn-4C-ICS">
+                                <rect key="frame" x="37.5" y="251" width="300" height="165"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fullname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQG-nn-Iop">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JvG-Ha-UEO">
+                                        <rect key="frame" x="0.0" y="45" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fJN-Wz-YH0">
+                                        <rect key="frame" x="0.0" y="90" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDt-oX-MBT">
+                                        <rect key="frame" x="0.0" y="135" width="300" height="30"/>
+                                        <color key="backgroundColor" red="0.89495074750000003" green="0.072929194540000006" blue="0.1744091478" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Let's have fun">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="MBV-DM-dcu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZaD-6h-ogt" firstAttribute="width" secondItem="F7t-qK-dmw" secondAttribute="width" id="2Jy-eB-Rfv"/>
+                            <constraint firstItem="vwn-4C-ICS" firstAttribute="centerY" secondItem="ZaD-6h-ogt" secondAttribute="centerY" id="Aca-lJ-eBB"/>
+                            <constraint firstItem="ZaD-6h-ogt" firstAttribute="height" secondItem="F7t-qK-dmw" secondAttribute="height" id="HZJ-y0-dri"/>
+                            <constraint firstItem="ZaD-6h-ogt" firstAttribute="centerX" secondItem="F7t-qK-dmw" secondAttribute="centerX" id="eVC-hA-ooW"/>
+                            <constraint firstItem="ZaD-6h-ogt" firstAttribute="centerY" secondItem="F7t-qK-dmw" secondAttribute="centerY" id="fBW-Oe-zXY"/>
+                            <constraint firstItem="vwn-4C-ICS" firstAttribute="centerX" secondItem="ZaD-6h-ogt" secondAttribute="centerX" id="jBK-ia-0Cv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBg-Gf-Oed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="-102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i13-2H-acv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NJ0-D1-H6a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qkI-K3-7aD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sK8-kd-s9P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyd-X8-fy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599.20000000000005" y="-111.0944527736132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="the-movies-free-download-6311" width="384" height="543"/>
+    </resources>
 </document>
