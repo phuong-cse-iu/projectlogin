@@ -20,12 +20,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mx5-kf-ARh">
+                                <rect key="frame" x="37.5" y="258.5" width="300" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Az2-Mf-T04">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0t-1Z-MGE">
+                                        <rect key="frame" x="0.0" y="60" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="SUe-yc-e5R">
+                                        <rect key="frame" x="0.0" y="120" width="300" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc6-Py-3wT">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
+                                                <color key="backgroundColor" red="0.8949507474899292" green="0.072929194535391886" blue="0.17440914783409994" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kce-dX-bHV">
+                                                <rect key="frame" x="151" y="0.0" width="149" height="30"/>
+                                                <color key="backgroundColor" red="0.89495074750000003" green="0.072929194540000006" blue="0.1744091478" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Signup">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SUe-yc-e5R" firstAttribute="width" secondItem="Mx5-kf-ARh" secondAttribute="width" id="ed1-6t-sHt"/>
+                                    <constraint firstItem="Az2-Mf-T04" firstAttribute="width" secondItem="Mx5-kf-ARh" secondAttribute="width" id="l61-74-tKw"/>
+                                    <constraint firstAttribute="width" constant="300" id="qSl-Wn-NH4"/>
+                                    <constraint firstItem="K0t-1Z-MGE" firstAttribute="width" secondItem="Mx5-kf-ARh" secondAttribute="width" id="vjS-AP-6wH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mx5-kf-ARh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ax3-f8-9DS"/>
+                            <constraint firstItem="Mx5-kf-ARh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0h-hf-yGQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="94" y="91"/>
+            <point key="canvasLocation" x="-90.400000000000006" y="-47.226386806596707"/>
         </scene>
     </scenes>
 </document>
