@@ -128,6 +128,9 @@
                                         <state key="normal" title="Let's have fun">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnSubmitPressed:" destination="ttf-ue-eh1" eventType="touchUpInside" id="vUZ-Sn-du3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -145,10 +148,15 @@
                             <constraint firstItem="vwn-4C-ICS" firstAttribute="centerX" secondItem="ZaD-6h-ogt" secondAttribute="centerX" id="jBK-ia-0Cv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtFieldAddress" destination="fJN-Wz-YH0" id="PCZ-gO-thY"/>
+                        <outlet property="txtFieldEmail" destination="JvG-Ha-UEO" id="Dhd-XA-8PS"/>
+                        <outlet property="txtFieldFullName" destination="oQG-nn-Iop" id="3b8-45-pq2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBg-Gf-Oed" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1354" y="-102"/>
+            <point key="canvasLocation" x="1231" y="-102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i13-2H-acv">
